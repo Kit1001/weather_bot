@@ -16,7 +16,7 @@ Node.js, Express.js
 2. Для запуска потребуется гит и докер  
 `sudo apt install docker.io git`
 3. Копируем репозиторий  
-`git clone `
+`git clone https://github.com/Kit1001/weather_bot.git`
 4. Переходим в рабочую папку  
 `cd weather_bot`
 5. Создаем образ для докера  
