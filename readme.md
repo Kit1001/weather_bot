@@ -9,16 +9,16 @@ Node.js, Express.js
 
 ### Запуск
 
-1. Нужно указать в файле .env или в переменных окружения следующие данные:  
+1. Для запуска потребуется гит и докер  
+`sudo apt install docker.io git`
+2. Копируем репозиторий  
+`git clone https://github.com/Kit1001/weather_bot.git`
+3. Переходим в рабочую папку  
+`cd weather_bot`
+4. В файле .env или в переменных окружения указываем следующие данные:  
 - TOKEN=токен бота телеграмм  
 - WEATHER_KEY=ключ api OpenWeatherMap  
 - HOST=ip-адрес сервера
-2. Для запуска потребуется гит и докер  
-`sudo apt install docker.io git`
-3. Копируем репозиторий  
-`git clone https://github.com/Kit1001/weather_bot.git`
-4. Переходим в рабочую папку  
-`cd weather_bot`
 5. Создаем образ для докера  
 `sudo docker build . -t weatherbot`
 6. Создаем и запускаем контейнер из образа  
