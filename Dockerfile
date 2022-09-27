@@ -1,6 +1,6 @@
 FROM node
 
 COPY . .
-RUN "node install"
+RUN npm install
 
 CMD ["node", "app.js"]
